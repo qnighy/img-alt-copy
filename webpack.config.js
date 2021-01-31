@@ -12,6 +12,7 @@ module.exports = {
   },
   entry: {
     background: "./src/background",
+    contentScript: "./src/contentScript",
   },
   resolve: {
     extensions: [".wasm", ".ts", ".tsx", ".mjs", ".js", ".jsx", ".json"],

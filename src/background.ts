@@ -6,7 +6,9 @@ chrome.contextMenus.create({
   contexts: ["selection"],
 }, () => {
   chrome.contextMenus.onClicked.addListener((info, tab) => {
-    if (info.menuItemId && info.menuItemId !== MENU_ID) return;
-    
+    if (info.menuItemId !== MENU_ID) return;
+    chrome.tabs.executeScript({
+      file: "contentScript.js",
+    });
   });
 });
