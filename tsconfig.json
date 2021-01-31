@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [],
+    "jsx": "react-jsx",
+    "rootDir": "./",
+    "composite": true,
+    "importHelpers": true,
+    // "downlevelIteration": true,
+    // "isolatedModules": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["**/*.ts", ".eslintrc.js", "webpack.config.js"]
+}

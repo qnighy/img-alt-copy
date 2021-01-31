@@ -3,5 +3,30 @@
   "version": "0.1.0",
   "description": "Copy text with <img alt>",
   "author": "Masaki Hara <ackie.h.gmai@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack watch",
+    "fmt": "prettier -w src/**/*.ts .eslintrc.js .prettierrc manifest.json tsconfig.json webpack.config.js",
+    "fmt:check": "prettier -c src/**/*.ts .eslintrc.js .prettierrc manifest.json tsconfig.json webpack.config.js",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "tsc": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.129",
+    "@types/eslint": "^7.2.6",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "copy-webpack-plugin": "^7.0.0",
+    "eslint": "^7.19.0",
+    "prettier": "^2.2.1",
+    "ts-loader": "^8.0.14",
+    "typescript": "^4.1.3",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0"
+  },
+  "dependencies": {
+    "tslib": "^2.1.0"
+  }
 }

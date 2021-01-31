@@ -1,0 +1,10 @@
+{
+  "name": "img alt copy",
+  "description": "Copy text with <img alt>",
+  "version": "0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "./background.js"
+  },
+  "permissions": ["activeTab", "contextMenus"]
+}
