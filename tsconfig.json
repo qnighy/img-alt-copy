@@ -7,6 +7,7 @@
     "jsx": "react-jsx",
     "rootDir": "./",
     "composite": true,
+    "outDir": "dist",
     "importHelpers": true,
     // "downlevelIteration": true,
     // "isolatedModules": true,
