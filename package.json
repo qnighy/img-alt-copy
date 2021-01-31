@@ -1,0 +1,7 @@
+{
+  "name": "img-alt-copy-chrome-extension",
+  "version": "0.1.0",
+  "description": "Copy text with <img alt>",
+  "author": "Masaki Hara <ackie.h.gmai@gmail.com>",
+  "license": "ISC"
+}
