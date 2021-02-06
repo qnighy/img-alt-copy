@@ -11,7 +11,8 @@
     "fmt:check": "prettier -c src/**/*.ts .eslintrc.js .prettierrc src/manifest.json tsconfig.json webpack.config.js",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "tsc": "tsc --noEmit"
+    "tsc": "tsc --noEmit",
+    "zip": "rm -r dist && yarn build && cd dist && zip -r ../dist.zip *"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.129",
