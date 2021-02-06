@@ -3,7 +3,7 @@
     "incremental": true,
     "target": "es5",
     "module": "commonjs",
-    "lib": [],
+    "lib": ["dom"],
     "jsx": "react-jsx",
     "rootDir": "./",
     "composite": true,
