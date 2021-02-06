@@ -1,6 +1,6 @@
 const selection = document.getSelection();
-let altString = "";
 if (selection) {
+  let altString = "";
   for (let i = 0; i < selection.rangeCount; i++) {
     const range = selection.getRangeAt(i);
     const iter = document.createNodeIterator(range.commonAncestorContainer);
@@ -33,5 +33,5 @@ if (selection) {
       }
     }
   }
+  navigator.clipboard.writeText(altString);
 }
-navigator.clipboard.writeText(altString);
