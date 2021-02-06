@@ -20,10 +20,7 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin({
-      patterns: [
-        { from: "manifest.json" },
-        { from: "icons/*.png" },
-      ],
+      patterns: [{ from: "manifest.json" }, { from: "icons/*.png" }],
     }),
   ],
   module: {

@@ -7,8 +7,8 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack watch",
-    "fmt": "prettier -w src/**/*.ts .eslintrc.js .prettierrc manifest.json tsconfig.json webpack.config.js",
-    "fmt:check": "prettier -c src/**/*.ts .eslintrc.js .prettierrc manifest.json tsconfig.json webpack.config.js",
+    "fmt": "prettier -w src/**/*.ts .eslintrc.js .prettierrc src/manifest.json tsconfig.json webpack.config.js",
+    "fmt:check": "prettier -c src/**/*.ts .eslintrc.js .prettierrc src/manifest.json tsconfig.json webpack.config.js",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "tsc": "tsc --noEmit"

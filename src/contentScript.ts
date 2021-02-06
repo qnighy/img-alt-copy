@@ -6,7 +6,7 @@ if (selection) {
     const iter = document.createNodeIterator(range.commonAncestorContainer);
     let inRange = false;
     let node: Node | null;
-    while (node = iter.nextNode()) {
+    while ((node = iter.nextNode())) {
       let start = 0;
       let end = (node.textContent ?? "").length;
       if (node === range.startContainer) {
@@ -19,7 +19,10 @@ if (selection) {
       if (inRange) {
         if (node.nodeType === Node.TEXT_NODE) {
           altString += (node.textContent ?? "").substring(start, end);
-        } else if (node.nodeType === Node.ELEMENT_NODE && node instanceof HTMLElement) {
+        } else if (
+          node.nodeType === Node.ELEMENT_NODE &&
+          node instanceof HTMLElement
+        ) {
           if (node.tagName.toLowerCase() === "img") {
             altString += node.getAttribute("alt") ?? "";
           }
