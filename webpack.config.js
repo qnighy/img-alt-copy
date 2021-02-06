@@ -10,9 +10,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "./dist"),
   },
+  context: path.resolve(__dirname, "./src"),
   entry: {
-    background: "./src/background",
-    contentScript: "./src/contentScript",
+    background: "./background",
+    contentScript: "./contentScript",
   },
   resolve: {
     extensions: [".wasm", ".ts", ".tsx", ".mjs", ".js", ".jsx", ".json"],
@@ -20,7 +21,8 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: "src/manifest.json", to: "manifest.json" },
+        { from: "manifest.json" },
+        { from: "icons/*.png" },
       ],
     }),
   ],
