@@ -1,4 +1,3 @@
-console.log("I'm a content script!");
 const selection = document.getSelection();
 let altString = "";
 if (selection) {
@@ -32,4 +31,4 @@ if (selection) {
     }
   }
 }
-console.log(altString);
+navigator.clipboard.writeText(altString);
